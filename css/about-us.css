@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(15, 99, 237);
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.header a {
+    color: rgba(255, 255, 255);
+}
+
+.header img {
+    position: absolute;
+    width: 100px;
+    left: 5%;
+}
+
+.nav-bar {
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    right: 5%;
+}
+
+.container-about-us {
+    position: relative;
+    width: 98%;
+    height: 100vh;
+    /* background: rgba(0, 0, 0, 0.8); */
+    background-image: url("/img/back-about-us.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-valoraciones {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.container-valoraciones .info-valoracion {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+}
+
+.container-valoraciones .info-valoracion h3 {
+    font-size: 2rem;
+}
+
+.cartas-valoracion {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    justify-items: center;
+    top: 10%;
+}
+
+.carta {
+    position: relative;
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 13px 25px -3px rgba(66, 68, 90, 1);
+    padding: 5%;
+    padding-top: 5%;
+}
+
+.carta .usuario-carta {
+    position: absolute;
+    bottom: 10%;
+}
+
+.container-formulario {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 50%;
+    bottom: 2%;
+    left: 0px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .btn-enviar button {
+    background-color: rgba(15, 99, 237);
+    width: 100px;
+    height: 50px;
+    transform: translateY(-50px);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.info-cliente label {
+    position: absolute;
+    transform: translateY(-30px);
+}
+
+.info-cliente input {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(146, 147, 155);
+    outline: none;
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.comentario-cliente {
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario-cliente input {
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid rgba(146, 147, 155);
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 2%;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(200 200 200);
+}
+
+.footer-page {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.footer-page h4 {
+    font-size: 1.5rem;
+}
+
+.footer-page .redes a {
+    color: rgb(83, 83, 83);
+    font-size: 1.5rem;
+}
