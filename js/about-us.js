@@ -48,7 +48,7 @@ btnAgregarComentario.addEventListener('click', () => {
         if (nombre.value === '') {
             nombre.style.borderColor = 'red'
         }
-        if (correo.value === '') {
+        if (correo.value === '' || validarCorreo.test(correo.value)) {
             correo.style.borderColor = 'red'
         }
         if (com.value === '') {
