@@ -3,7 +3,8 @@ const btnAgregarComentario = document.getElementById('enviar-comentario')
 console.log(btnAgregarComentario)
 
 let comentarios = [
-    new Comentario('Comentario', 'Juan', 'prueba@prueba.com')
+    new Comentario('Excelente servicio', 'Juan', 'prueba@prueba.com'),
+    new Comentario('Excelentes precios', 'Juan', 'prueba@prueba.com'),
 ]
 
 function mostrarComentarios() {
