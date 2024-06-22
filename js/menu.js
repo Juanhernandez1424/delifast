@@ -1,13 +1,25 @@
 const tarjetas = document.getElementById('tarjetas');
 const btnsHeader = document.querySelectorAll('.btn-header')
 const btnVerTodos = document.getElementById('ver-todos')
-console.log(btnsHeader)
+const btnMenuBurger = document.getElementById('btn-menu-burger')
+const navBar = document.getElementById('nav-bar')
+const btnMenuBtns = document.getElementById('btn-menu-btns')
+const btnsMenu = document.querySelector('.btns-menu')
+
+
+btnMenuBurger.addEventListener('click', () => {
+    navBar.classList.toggle('active')
+})
+
+btnMenuBtns.addEventListener('click', () => {
+    btnsMenu.classList.toggle('active')
+})
 
 const listaTarjetas = [
     {
         titulo: 'Hamburguesa Sencilla',
         descripcion: 'Jugosa carne de res, queso derretido, tocino crujiente, todo entre suaves panes brioche. ¡Una experiencia irresistible en cada bocado',
-        precio: '45.000',
+        precio: '35.000',
         image: '/img/front-img.jpg',
         categoria: 'burgers',
     },
@@ -74,7 +86,6 @@ const listaTarjetas = [
         image: '/img/tocineta.jpg',
         categoria: 'adiciones',
     },
-
 ]
 
 function mostrarTarjetas(tarjeta) {
