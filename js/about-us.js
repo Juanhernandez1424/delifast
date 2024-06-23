@@ -1,6 +1,11 @@
 const listaComentarios = document.getElementById('cartas-valoracion')
 const btnAgregarComentario = document.getElementById('enviar-comentario')
-console.log(btnAgregarComentario)
+const btnMenuBurger = document.getElementById('btn-menu-burger')
+const navBar = document.getElementById('nav-bar')
+
+btnMenuBurger.addEventListener('click', () => {
+    navBar.classList.toggle('active')
+})
 
 let comentarios = [
     new Comentario('Excelente servicio', 'Juan', 'prueba@prueba.com'),

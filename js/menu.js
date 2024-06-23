@@ -1,3 +1,4 @@
+//Declaración de variables
 const tarjetas = document.getElementById('tarjetas');
 const btnsHeader = document.querySelectorAll('.btn-header')
 const btnVerTodos = document.getElementById('ver-todos')
@@ -6,15 +7,17 @@ const navBar = document.getElementById('nav-bar')
 const btnMenuBtns = document.getElementById('btn-menu-btns')
 const btnsMenu = document.querySelector('.btns-menu')
 
-
+// Método para mostrar menú de navegación
 btnMenuBurger.addEventListener('click', () => {
     navBar.classList.toggle('active')
 })
 
+//Método para mostrar el menú de los botones
 btnMenuBtns.addEventListener('click', () => {
     btnsMenu.classList.toggle('active')
 })
 
+//Arreglo de las tarjetas de comidas
 const listaTarjetas = [
     {
         titulo: 'Hamburguesa Sencilla',
@@ -88,6 +91,7 @@ const listaTarjetas = [
     },
 ]
 
+// Función para mostrar todas las tarjetas de comida
 function mostrarTarjetas(tarjeta) {
     const divTarjeta = document.createElement('div')
     divTarjeta.classList.add('tarjeta')
@@ -112,10 +116,12 @@ function mostrarTarjetas(tarjeta) {
     tarjetas.append(divTarjeta)
 }
 
+// Recorrido en el arreglo de listaTarjetas
 listaTarjetas.forEach(tarjeta => {
     mostrarTarjetas(tarjeta)
 })
 
+// Función para mostrar todas las tarjetas después de realizar filtros
 btnVerTodos.addEventListener('click', () => {
     tarjetas.innerHTML = ""
     listaTarjetas.forEach(tarjeta => {
@@ -123,6 +129,7 @@ btnVerTodos.addEventListener('click', () => {
     })
 })
 
+// Función para los filtros de tarjetas
 btnsHeader.forEach(btn => btn.addEventListener('click', (event) => {
     const btnId = event.currentTarget.id;
     tarjetas.innerHTML = ""

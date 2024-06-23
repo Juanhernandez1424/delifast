@@ -11,16 +11,22 @@
 </head>
 
 <body onload="mostrarComentarios()">
-
     <header class="header">
-        <img src="/img/DeliFastLogo.png" alt="logo">
+        <img src="/img/DeliFastLogo.png" alt="logo" />
+        <div class="menu-burger">
+          <ion-icon
+            name="menu-outline"
+            class="menu-icon"
+            id="btn-menu-burger"
+          ></ion-icon>
+        </div>
         <nav class="nav-bar" id="nav-bar">
-            <a href="/index.html">Inicio</a>
-            <a href="/html/about-us.html">Sobre Nosotros</a>
-            <a href="/html/menu.html">Menu</a>
-            <a href="/html/contacto.html">Contacto</a>
+          <a href="/index.html">Inicio</a>
+          <a href="/html/about-us.html">Sobre Nosotros</a>
+          <a href="/html/menu.html">Menu</a>
+          <a href="/html/contacto.html">Contacto</a>
         </nav>
-    </header>
+      </header>
 
     <div class="container-about-us">
         <div class="about-us-info">
@@ -67,28 +73,32 @@
                 </div>
             </div>
         </div>
-        <div class="container-formulario">
-            <form action="" class="form" id="form" onsubmit="return false">
-                <h3>Dejanos tus comentarios</h3>
-                <div class="input-form">
-                    <div class="info-cliente">
+    </div>
+
+    <div class="container-formulario">
+        <form action="" class="form" id="form" onsubmit="return false">
+            <h3>Dejanos tus comentarios</h3>
+            <div class="input-form">
+                <div class="info-cliente">
+                    <div class="nombre-cliente">
                         <label for="txt_nombre">Nombre</label>
                         <input type="text" id="txt_nombre" placeholder="Nombre">
+                    </div>
+                    <div class="correo-cliente">
                         <label for="txt_correo">Correo</label>
                         <input type="text" id="txt_correo" placeholder="Correo">
                     </div>
-                    <div class="comentario-cliente">
-                        <label for="txt_comentario">Comentarios</label>
-                        <input type="text" id="txt_comentario" placeholder="Ingresa tú comentario"></input>
-                    </div>
                 </div>
-                <div class="btn-enviar">
-                    <button class="enviar-comentario" id="enviar-comentario">Enviar</button>
+                <div class="comentario-cliente">
+                    <label for="txt_comentario">Comentarios</label>
+                    <input type="text" id="txt_comentario" placeholder="Ingresa tú comentario"></input>
                 </div>
-            </form>
-        </div>
+            </div>
+            <div class="btn-enviar">
+                <button class="enviar-comentario" id="enviar-comentario">Enviar</button>
+            </div>
+        </form>
     </div>
-
 
     <footer class="footer">
         <div class="footer-page">
