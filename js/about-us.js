@@ -53,12 +53,15 @@ btnAgregarComentario.addEventListener('click', () => {
 
         if (nombre.value === '') {
             nombre.style.borderColor = 'red'
+            nombre.focus()
         }
         if (correo.value === '' || validarCorreo.test(correo.value)) {
             correo.style.borderColor = 'red'
+            correo.focus()
         }
         if (com.value === '') {
             com.style.borderColor = 'red'
+            com.focus()
         }
     }
 })

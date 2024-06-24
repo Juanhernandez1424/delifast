@@ -278,12 +278,10 @@ ul{
     .container-tarjetas{
         display: flex;
         width: 100%;
-        height: 2100px;
         margin-top: 20px;
     }
 
     .tarjetas{
-        position: absolute;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -311,13 +309,11 @@ ul{
     
     .container-tarjetas{
         width: 100%;
-        height: 4200px;
     }
 
     .tarjetas{
-        position: absolute;
         display: grid;
         grid-template-columns: 1fr;
-        justify-items: center;
+        align-items: center;
     }
 }
