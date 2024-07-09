@@ -75,7 +75,7 @@ button {
     position: relative;
     width: 98%;
     height: 100vh;
-    background-image: url("img/about-us.jpg");
+    background-image: url("../img/about-us.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
