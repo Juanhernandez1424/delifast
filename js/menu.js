@@ -23,7 +23,7 @@ const listaTarjetas = [
         titulo: 'Hamburguesa Sencilla',
         descripcion: 'Jugosa carne de res, queso derretido, tocino crujiente, todo entre suaves panes brioche. ¡Una experiencia irresistible en cada bocado',
         precio: '35.000',
-        image: '../img/front-img.jpg',
+        image: '../img/burger-doble.png',
         categoria: 'burgers',
     },
     {
