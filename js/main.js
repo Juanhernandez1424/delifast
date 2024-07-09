@@ -9,5 +9,5 @@ btnMenuBurger.addEventListener('click', () => {
 
 // Función para poder enviar la página a menú
 btnConocerMenu.addEventListener('click', () => {
-    window.location.href = "/html/menu.html"
+    window.location.href = "../html/menu.html"
 })
